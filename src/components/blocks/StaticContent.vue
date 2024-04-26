@@ -1,21 +1,55 @@
 <template>
-  <div class="title  mt-[1.5vh] px-[3.5vh]">
-    <div class="title-bar  flex flex-row mb-[3vh] w-full h-fit">
+  <div ref="el" class="title mt-[1.5vh] px-[3.5vh]">
+    <div class="title-bar flex flex-row mb-[3vh] w-full h-fit items-baseline">
       <div class="w-fit">
         <h1 class="text-7xl font-bold">{{ title }}</h1>
-        <h2 class="flex text-ls justify-end font-light"> {{ subtitle }} </h2>
+        <h2 v-if="subtitle" class="flex text-ls justify-end font-light"> {{ subtitle }} </h2>
       </div>
+      <button
+          v-if="anchorage"
+          class="transition-all duration-300 text-5xl text-gray-500 hover:text-white hover:underline"
+          @click="()=>{
+            const path = $route.fullPath.split('#')[0]
+            const route = path + '#' + el?.id
+            const absoluteURL = win.origin + route
+            clip.copy(absoluteURL)
+          }"
+      >
+        #
+      </button>
     </div>
     <div class="content text-justify text-lg">
       <slot/>
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 
-const props = defineProps({
-  title: String,
-  subtitle: String,
+import {onMounted, ref} from "vue";
+import {useClipboard} from "@vueuse/core";
+import {useRoute} from "vue-router";
+
+const clip = useClipboard()
+const win = window
+const route = useRoute()
+const props = withDefaults(
+    defineProps<
+        {
+          title: string,
+          subtitle?: string,
+          anchorage?: boolean
+        }
+    >(),
+    {
+      anchorage: false
+    }
+)
+
+const el = ref<HTMLDivElement | null>(null)
+onMounted(() => {
+  if (props.anchorage && el.value?.id == route.hash?.slice(1)) {
+    el.value?.scrollIntoView({behavior: 'smooth'})
+  }
 })
 </script>
 
