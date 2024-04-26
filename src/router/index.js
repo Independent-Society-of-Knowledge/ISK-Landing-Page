@@ -42,7 +42,7 @@ const router = createRouter({
       path: "/products/molekule",
       name: "molekule",
       component: MolekuleView
-    }
+    },
     {
       path: "/terms-of-use",
       name: "terms-of-use",
