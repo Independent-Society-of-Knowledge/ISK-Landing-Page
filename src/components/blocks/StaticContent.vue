@@ -1,5 +1,5 @@
 <template>
-  <div class="title  w-screen mt-[1.5vh] px-[0.5vh]">
+  <div class="title  mt-[1.5vh] px-[3.5vh]">
     <div class="title-bar  flex flex-row mb-[3vh] w-full h-fit">
       <div class="w-fit">
         <h1 class="text-7xl font-bold">{{ title }}</h1>
