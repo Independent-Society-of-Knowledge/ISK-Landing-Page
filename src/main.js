@@ -7,7 +7,7 @@ import I18NextVue from "i18next-vue";
 import App from "./App.vue";
 import router from "./router";
 import "./styles/carbon-g90.css";
-import "./styles/tailwind.css";
+import "./styles/tailwind.scss";
 
 const localLang = localStorage.getItem("language") || "en";
 const i18nInitialized = i18next.use(httpBackend).init({

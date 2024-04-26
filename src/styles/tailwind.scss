@@ -23,3 +23,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #333;
 }
+
+.limited-width{
+    & > *{
+        @apply md:max-w-[1366px];
+    }
+}

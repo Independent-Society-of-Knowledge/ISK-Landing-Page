@@ -4,13 +4,13 @@
   <div class="App__nav">
     <the-header/>
   </div>
-  <div class="flex flex-col transition-transform gap-[8vh] px-[3vw]">
-    <div class="App__main ">
+  <div class="flex flex-col transition-transform gap-[8vh] limited-width items-center">
+    <div class="App__main">
       <Transition>
         <router-view/>
       </Transition>
     </div>
-    <div class="App__footer">
+    <div class="App__footer w-full">
       <the-footer/>
     </div>
   </div>

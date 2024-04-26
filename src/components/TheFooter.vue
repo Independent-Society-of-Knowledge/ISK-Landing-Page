@@ -1,5 +1,5 @@
 <template>
-  <div class="footer ">
+  <div class="footer px-[16px]">
     <div class="flex md:flex-row sm:flex-col justify-center items-center">
       <div class="flex flex-col w-full">
         <div class="flex flex-col w-auto gap-[3vh]">
