@@ -154,7 +154,7 @@ export default {
                         '--tw-prose-links': theme('colors.teal[900]'),
                         '--tw-prose-bold': theme('colors.teal[900]'),
                         '--tw-prose-counters': theme('colors.teal[600]'),
-                        '--tw-prose-bullets': theme('colors.teal[400]'),
+                        '--tw-prose-bullets': theme('colors.gray[200]'),
                         '--tw-prose-hr': theme('colors.teal[300]'),
                         '--tw-prose-quotes': theme('colors.teal[900]'),
                         '--tw-prose-quote-borders': theme('colors.teal[300]'),
