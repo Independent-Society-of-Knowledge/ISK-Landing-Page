@@ -1,6 +1,6 @@
 <template>
-  <div class="title  mt-[2rem]">
-    <div class="title-bar  flex flex-row mb-[3rem] w-full h-fit">
+  <div class="title  w-screen mt-[1.5vh] px-[0.5vh]">
+    <div class="title-bar  flex flex-row mb-[3vh] w-full h-fit">
       <div class="w-fit">
         <h1 class="text-7xl font-bold">{{ title }}</h1>
         <h2 class="flex text-ls justify-end font-light"> {{ subtitle }} </h2>

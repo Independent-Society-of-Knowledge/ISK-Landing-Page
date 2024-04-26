@@ -1,8 +1,8 @@
 <template>
-  <div class=" sm:w-fit sm:h-fit">
-    <Hero/>
-    <AboutSection/>
-  </div>
+<div class="home flex flex-col gap-[2rem]">
+  <Hero/>
+  <AboutSection/>
+</div>
 </template>
 
 <script setup>

@@ -4,7 +4,7 @@ import Callout from "@/components/blocks/Callout.vue";
 </script>
 
 <template>
-  <div class="flex flex-row gap-[0.5rem] my-[5rem]">
+  <div class="lg:flex lg:flex-row md:flex-col sm:flex-col gap-[1vw] sm:flex">
     <Callout title="About" subtitle="What is ISK?" path="about">
       ISK is an authority-free platform where scientists and researchers collaborate on projects they deem important and
       intriguing,

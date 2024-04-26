@@ -64,8 +64,6 @@ import StaticContent from "../components/blocks/StaticContent.vue";
               </cv-button>
             </a>
           </div>
-
-
         </div>
         <div class="max-w-full w-full min-w-0"></div>
 

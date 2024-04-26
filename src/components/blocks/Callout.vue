@@ -1,7 +1,7 @@
 <template>
-  <div class="Callout  pb-0 ">
-    <div class="flex-col h-full  bg-[#151415]">
-      <div class="pt-[3rem] px-[26px] pb-[26px]">
+  <div class="Callout ">
+    <div class="flex-col  h-full bg-[#151415]">
+      <div class="pt-[3vh] px-[1vw] pb-[1vw]">
         <div class="title  flex-col gap-[10px]">
           <div class="the-title text-5xl text-[#575658] ">
             {{ title }}
