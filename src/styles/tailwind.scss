@@ -26,6 +26,6 @@
 
 .limited-width{
     & > *{
-        @apply md:max-w-[1366px];
+        @apply lg:max-w-[1766px];
     }
 }

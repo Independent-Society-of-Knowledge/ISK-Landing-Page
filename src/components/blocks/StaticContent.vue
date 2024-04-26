@@ -1,9 +1,9 @@
 <template>
-  <div ref="el" class="title mt-[1.5vh] px-[3.5vh]">
+  <article ref="el" class="title mt-[1.5vh] px-[3.5vh] prose md:prose-xl lg:prose-2xl prose-invert max-w-none">
     <div class="title-bar flex flex-row mb-[3vh] w-full h-fit items-baseline">
       <div class="w-fit">
-        <h1 class="text-7xl font-bold">{{ title }}</h1>
-        <h2 v-if="subtitle" class="flex text-ls justify-end font-light"> {{ subtitle }} </h2>
+        <h1 style="margin: 0; height: fit-content">{{ title }}</h1>
+        <h4 class="whitespace-nowrap font-light"  v-if="subtitle" style="margin: 0; height: fit-content"> {{ subtitle }} </h4>
       </div>
       <button
           v-if="anchorage"
@@ -18,10 +18,10 @@
         #
       </button>
     </div>
-    <div class="content text-justify text-lg">
+    <div>
       <slot/>
     </div>
-  </div>
+  </article>
 </template>
 <script setup lang="ts">
 
