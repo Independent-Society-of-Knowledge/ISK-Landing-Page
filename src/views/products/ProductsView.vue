@@ -1,6 +1,5 @@
 <script setup>
-
-import StaticContent from "../components/blocks/StaticContent.vue";
+import StaticContent from "~/components/blocks/StaticContent.vue";
 </script>
 
 <template>
@@ -28,9 +27,7 @@ import StaticContent from "../components/blocks/StaticContent.vue";
             </a>
           </div>
         </div>
-
       </div>
-
       <div class="backgroundMoleKule flex flex-row w-full">
         <div class="content flex flex-col bg-black bg-opacity-75 h-full w-full backdrop-blur-[3px]">
           <div class="p-[2rem]">
@@ -58,11 +55,11 @@ import StaticContent from "../components/blocks/StaticContent.vue";
             </StaticContent>
           </div>
           <div class="flex h-fit justify-end mt-[1rem]">
-            <a href="https://github.com/Independent-Society-of-Knowledge/MoleKule/">
+            <router-link to="/products/molekule">
               <cv-button kind="secondary" size="lg">
                 More
               </cv-button>
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="max-w-full w-full min-w-0"></div>
@@ -70,17 +67,16 @@ import StaticContent from "../components/blocks/StaticContent.vue";
       </div>
     </div>
   </StaticContent>
-
 </template>
 
 <style scoped>
 .backgroundDeduKt {
-  background-image: url("../assets/deduktproduct.jpg");
+  background-image: url("../../assets/deduktproduct.jpg");
   background-size: cover;
 }
 
 .backgroundMoleKule {
-  background-image: url("../assets/molekuleproduct.jpg");
+  background-image: url("../../assets/molekuleproduct.jpg");
   background-size: cover;
 }
 </style>
