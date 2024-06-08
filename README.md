@@ -1,4 +1,4 @@
-![Landing](https://github.com/Independent-Society-of-Knowledge/ISK-Landing-Page/assets/76442288/673d08f8-4cc0-4518-abdd-4c4c1a6ebb04)
+![image](https://github.com/Independent-Society-of-Knowledge/ISK-Landing-Page/assets/76442288/74bc6d50-1aef-4341-8b66-771b06b3d2ed)
 
 # ISK Landing Page
 
